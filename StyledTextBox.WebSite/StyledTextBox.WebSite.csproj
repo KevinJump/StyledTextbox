@@ -426,6 +426,16 @@
   </Target>
   <Import Project="..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets" Condition="Exists('..\packages\AutoMapper.3.3.1\tools\AutoMapper.targets')" />
   <Import Project="..\packages\UmbracoCms.7.5.7\build\UmbracoCms.targets" Condition="Exists('..\packages\UmbracoCms.7.5.7\build\UmbracoCms.targets')" />
+  <PropertyGroup>
+    <PostBuildEvent>CALL XCOPY "$(ProjectDir)App_Plugins\StyledTextbox\*.*" "$(SolutionDir)Distrib\styledtextbox\" /y /q
+CALL XCOPY "$(ProjectDir)App_Plugins\StyledTextbox\css\*.*" "$(SolutionDir)Distrib\styledtextbox\" /y /q
+CALL XCOPY "$(ProjectDir)App_Plugins\StyledTextbox\html\*.*" "$(SolutionDir)Distrib\styledtextbox\" /y /q
+CALL XCOPY "$(ProjectDir)App_Plugins\StyledTextbox\js\*.*" "$(SolutionDir)Distrib\styledtextbox\" /y /q
+CALL XCOPY "$(ProjectDir)App_Plugins\StyledTextbox\lang\*.*" "$(SolutionDir)Distrib\styledtextbox\" /y /q
+
+CALL XCOPY "$(ProjectDir)bin\Jumoo.*.dll" "$(SolutionDir)Distrib\styledtextbox\" /y /q
+</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
