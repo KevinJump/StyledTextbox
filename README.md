@@ -1,5 +1,5 @@
 # StyledTextbox
-Textbox for umbraco with css and charecter limits
+Textbox for umbraco with css and character limits
 
 ![Editor](https://github.com/KevinJump/StyledTextbox/raw/master/Screenshots/editor-limits.PNG)
 

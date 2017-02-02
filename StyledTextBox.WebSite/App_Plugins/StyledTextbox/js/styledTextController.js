@@ -16,12 +16,12 @@
     }
 
     $scope.limitMsg = localizationService.dictionary['styledtext_limit'] || 
-        'you have reached the limit of {{limit}} charecters';
+        'you have reached the limit of {{limit}} characters';
     $scope.adviseMsg = localizationService.dictionary['styledtext_advice'] ||
-        'you have gone over the advised length by {{over}} charecters';
+        'you have gone over the advised length by {{over}} characters';
 
     $scope.remaining = localizationService.dictionary['styledtext_remaining'] ||
-        '{{remain}} charecters left';
+        '{{remain}} characters left';
 
     $scope.checkCharLimit = function () {
         if ($scope.limit > 0 && $scope.model.value != undefined) {
