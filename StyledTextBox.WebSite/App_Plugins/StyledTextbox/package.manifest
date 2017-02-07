@@ -12,16 +12,22 @@
 			prevalues: {
 				fields: [
 					{
+						label: "Multi-line",
+						description: "render as a multi-line textarea",
+						key: "multiLine",
+						view: "boolean"
+					},
+					{
 						label: "Style",
 						description: "Additional styles to apply",
 						key: "style",
 						view: "textarea"
 					},
 					{
-						label: "Multi-line",
-						description: "Should the control render as a single-line input or a multi-line textarea?",
-						key: "multiLine",
-						view: "boolean"
+						label: "Css Class",
+						description: "Css Class to apply",
+						key: "cssclass",
+						view: "textstring"
 					},
 					{
 						label: "Placeholder",
@@ -52,6 +58,7 @@
 			defaultconfig: {
 				multiLine: 0,
 				style: "font-size: 36px; line-height: 45px; font-weight: bold",
+				cssclass: "",
 				charCount: 0,
 				enforceLimit: 0,
 				hideLabel: 0

@@ -3,7 +3,7 @@
 
     <input ng-show="model.config.multiLine != 1" ng-model="model.value" ng-change="checkCharLimit()" type="text"
            id="{{model.alias}}"
-           class="umb-editor umb-textstring textstring simple-styledText"
+           class="umb-editor umb-textstring textstring simple-styledText {{model.config.cssclass}}"
            style="{{model.config.style}}"
            ng-class="{'simple-full' : model.hideLabel}"
            placeholder="{{model.config.placeholder}}" />

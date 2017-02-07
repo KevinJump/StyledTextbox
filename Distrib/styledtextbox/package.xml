@@ -49,10 +49,9 @@
       <website>http://jumoo.uk/</website>
     </author>
     <readme><![CDATA[Styled Textbox
-============
-
+<p>
 Simple Property Editor for Umbraco 7.x that gives you a styled textbox or textarea, makes for nice page title or heading settings. 
-
+</p>
 ]]></readme>
   </info>
   <DocumentTypes />
