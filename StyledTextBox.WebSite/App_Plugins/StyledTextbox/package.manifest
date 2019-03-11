@@ -65,6 +65,7 @@
 				multiLine: 0,
 				style: "font-size: 36px; line-height: 45px; font-weight: bold",
 				cssclass: "",
+				containercssclass: "",
 				charCount: 0,
 				enforceLimit: 0,
 				hideLabel: 0
