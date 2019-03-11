@@ -24,11 +24,17 @@
 						view: "textarea"
 					},
 					{
-						label: "Css Class",
-						description: "Css Class to apply",
+						label: "Input Css Class",
+						description: "Css Class to apply on the input",
 						key: "cssclass",
 						view: "textstring"
 					},
+					{
+						label: "Container Css Class",
+						description: "Css Class to apply on the field container",
+						key: "containercssclass",
+						view: "textstring"
+					},					
 					{
 						label: "Placeholder",
 						description: "Placeholder text to put in box when empty",
