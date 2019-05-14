@@ -1,4 +1,4 @@
-﻿<div ng-controller="jumoo.propEditor.styledTextController" class="jumoo-styledText-editor">
+﻿<div ng-controller="jumoo.propEditor.styledTextController" class="jumoo-styledText-editor {{model.config.containercssclass}}">
     <div class="simple-label" ng-if="model.hideLabel">{{model.label}}</div>
 
     <input ng-if="model.config.multiLine != 1" ng-model="model.value" ng-change="checkCharLimit()" type="text"
