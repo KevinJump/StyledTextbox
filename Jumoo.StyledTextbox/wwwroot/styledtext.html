@@ -1,0 +1,27 @@
+﻿﻿<div ng-controller="jumoo.styledTextController as vm" 
+      class="jumoo-styledText-editor {{vm.config.containerCssClass}}">
+
+    <div class="simple-label" ng-if="vm.hideLabel">{{vm.model.label}}</div>
+
+    <input ng-if="vm.config.multiLine != 1" 
+           ng-model="vm.model.value" 
+           ng-change="vm.checkCharLimit()" type="text"
+           id="{{vm.model.alias}}"
+           class="textstring simple-styledText {{vm.config.cssClass}}"
+           style="{{vm.config.style}}"
+           ng-class="{'simple-full' : vm.hideLabel}"
+           placeholder="{{vm.config.placeholder}}" />
+
+    <textarea ng-if="vm.config.multiLine == 1" 
+              ng-model="vm.model.value" 
+              ng-change="vm.checkCharLimit()"
+              id="{{vm.model.alias}}"
+              class="textstring simple-styledText {{vm.config.cssClass}}"
+              style="{{vm.config.style}}"
+              ng-class="{'simple-full' : vm.hideLabel}"
+              placeholder="{{vm.config.placeholder}}"></textarea>
+
+    <div class="char-warning">
+        <span ng-bind="vm.info" ng-class="vm.getMessageClass()" ng-show="vm.limit > 0"></span>
+    </div>
+</div>
